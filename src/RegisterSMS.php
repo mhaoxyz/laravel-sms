@@ -11,9 +11,11 @@ class RegisterSMS
         $this->sms = new SMS();
     }
 
-    public function send($phone)
+    public function send($phone, $code = null)
     {
-        $code = str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
+        if (empty($code)) {
+            $code = str_pad(rand(0, 999999), 6, '0', STR_PAD_LEFT);
+        }
         $paramStrings = [
             'code' => $code
         ];

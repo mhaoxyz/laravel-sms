@@ -14,7 +14,7 @@ class SMSServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../to/config', config_path()
+            __DIR__ . '/../to/config' => config_path(),
         ], 'mhaoxyz-sms');
 
 //        $this->loadRoutesFrom(__DIR__ . '/../to/routes.php'); // 注册路由
