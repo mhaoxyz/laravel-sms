@@ -13,7 +13,7 @@
         }
     },
     "require": {
-        "mhaoxyz/aliyuncs-sms": "@dev"
+        "mhaoxyz/aliyuncs-sms": "~0.0.1"
     },
     "require-dev": {
         "mhaoxyz/laravel-illuminate": "^5.4"
